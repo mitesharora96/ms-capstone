@@ -1,0 +1,39 @@
+.contributors > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
+}
+
+.contributors > ul > li {
+  /* border: 1px solid #dadada; */
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.contributors .cards-card-body {
+  margin: 16px;
+}
+
+.contributors .cards-card-image {
+  line-height: 0;
+}
+
+.contributors > ul > li .cards-card-image img {
+  width: 164px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 164px;
+}
+
+.contributors .cards-card-body p a {
+  background-color: #202020;
+  padding: 10px;
+  margin-top: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

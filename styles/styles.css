@@ -15,18 +15,21 @@
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: #202020;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --brand-primary-color: #ffea00;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: "Asar", georgia, "Times New Roman", times, serif;
+  --body-font-family: "Source Sans 3", "Helvetica Neue", helvetica, arial, sans-serif;
+  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+  --font-weight-bold: 600;
 
   /* body sizes */
   --body-font-size-m: 22px;
   --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-xs: 14px;
 
   /* heading sizes */
   --heading-font-size-xxl: 55px;
@@ -106,10 +109,15 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
+  /* font-family: var(--heading-font-family);
+  font-weight: 600; */
   line-height: 1.25;
   scroll-margin: 40px;
+
+  font-family: var(--fontFamilySerif, "Asar", Georgia, "Times New Roman", Times, serif);
+  font-weight: var(--fontWeightNormal, normal);
+  margin-bottom: 13.5px;
+  margin-top: 27px;
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -168,25 +176,26 @@ a:hover {
 /* buttons */
 a.button:any-link,
 button {
-  box-sizing: border-box;
-  display: inline-block;
-  max-width: 100%;
-  margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
-  text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 14px;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    margin: 12px 0;
+    border: 2px solid transparent;
+    padding: 1em 2.5em;
+    font-family: var(--body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--brand-primary-color);
+    color: var(--background-color-hf);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 a.button:hover,
@@ -240,6 +249,7 @@ main > .section > div {
 
 main > .section:first-of-type {
   margin-top: 0;
+  padding-top: 80px;
 }
 
 @media (width >= 900px) {
@@ -254,4 +264,22 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+.aboutusheading > div > h2 {
+  margin-top: 10px;
+}
+
+.contributors-container > div >h2::after{
+  content: '';
+    border-bottom: 2px solid #ffea00;
+    display: block;
+    padding-top: 8px;
+    width: 84px;
+}
+.contributors-container > div >p{
+  font-weight: normal;
+    font-size: var(--body-font-size-xs);
+    line-height: 2.5;
+    margin-bottom: 14px;
 }

@@ -25,3 +25,21 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+.cards .cards-card-body a {
+  font-size: 18px;
+  padding: 0;
+  background-color: unset;
+  margin: 0;
+  border: none;
+}
+.cards .cards-card-body p:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cards .cards-card-body p:last-child {
+  color: dimgray;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 0;
+}

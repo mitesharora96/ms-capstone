@@ -13,12 +13,16 @@
 
 .columns > div > .columns-img-col {
   /* order: 0; */
-  width: 60%;
+  flex-basis: 65%;
 }
 .col-text{
-  width: 30%;
-  padding: 35px;
+  width: 35%;
+  padding: 3.5em 2em 2em;
   background-color: #ebebeb;
+}
+
+.col-text > p{
+  font-size: 14px;
 }
 
 .columns > div > .columns-img-col img {
@@ -27,8 +31,8 @@
 }
 .columns > div{
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin-bottom: 1em;
   width: 100%;
 }
