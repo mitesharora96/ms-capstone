@@ -1,4 +1,4 @@
-.magarticles > ul {
+.magzinearticles > ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -7,20 +7,20 @@
     grid-gap: 24px;
   }
   
-  .magarticles > ul > li {
+  .magzinearticles > ul > li {
     border: 1px solid #dadada; 
     background-color: var(--background-color);
   }
   
-  .magarticles .cards-card-body {
+  .magzinearticles .cards-card-body {
     margin: 16px;
   }
   
-  .magarticles .cards-card-image {
+  .magzinearticles .cards-card-image {
     line-height: 0;
   }
   
-  .magarticles > ul > li img {
+  .magzinearticles > ul > li img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
