@@ -8,7 +8,7 @@
   }
   
   .magarticles > ul > li {
-    border: 1px solid #dadada;
+    border: 1px solid #dadada; 
     background-color: var(--background-color);
   }
   

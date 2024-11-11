@@ -7,7 +7,7 @@ async function getAllArticles(artURL) {
     return fData
 }
 
-export default async function decorate(block) {
+export default async function decorate(block) { 
     
 const articles = block.querySelector('a[href$=".json"]');
 const artURL = articles.href;
