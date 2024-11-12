@@ -19,6 +19,7 @@
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
   --brand-primary-color: #ffea00;
+  --background-color-hf:#202020;
 
   /* fonts */
   --heading-font-family: "Asar", georgia, "Times New Roman", times, serif;
@@ -66,7 +67,7 @@
     /* heading sizes */
     --heading-font-size-xxl: 45px;
     --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
+    --heading-font-size-l: 24px;
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
@@ -109,8 +110,8 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  /* font-family: var(--heading-font-family);
-  font-weight: 600; */
+  font-family: var(--heading-font-family);
+  font-weight: normal;
   line-height: 1.25;
   scroll-margin: 40px;
 
@@ -249,7 +250,7 @@ main > .section > div {
 
 main > .section:first-of-type {
   margin-top: 0;
-  padding-top: 80px;
+  padding-top: 160px;
 }
 
 @media (width >= 900px) {
@@ -283,3 +284,20 @@ main .section.highlight {
     line-height: 2.5;
     margin-bottom: 14px;
 }
+
+.magzinearticles-container > div >h2::after{
+  content: '';
+  border-bottom: 2px solid #ffea00;
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+
+.cards-container > div >h2::after{
+  content: '';
+  border-bottom: 2px solid #ffea00;
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+

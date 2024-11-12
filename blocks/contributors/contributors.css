@@ -37,3 +37,11 @@
   align-items: center;
   justify-content: center;
 }
+.contributors .cards-card-body h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--body-font-size-xs);
+  line-height: 1.5;
+  font-family: var(--body-font-family);
+  margin-top: 6px;
+}

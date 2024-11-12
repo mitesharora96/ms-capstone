@@ -436,6 +436,10 @@ header nav .section.searchform-container.nav-sections .searchform-wrapper{
   }
 }
 
+header nav .nav-sections ul > li:hover a, header nav .nav-sections ul > li.active a {
+  background-color: var(--brand-primary-color);
+}
+
 @media (width <= 899px) {
   header nav .nav-sections ul > li {
     margin-bottom: 20px;
