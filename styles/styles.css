@@ -300,4 +300,9 @@ main .section.highlight {
   padding-top: 8px;
   width: 84px;
 }
+@media (width < 420px) {
+  #camping-in-western-australia{
+    font-size: var(--heading-font-size-l);
+  }
+}
 
